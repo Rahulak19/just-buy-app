@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "local": "cross-env ENV_PATH='/env/.env_local' node src/index.js"
+    "local": "cross-env ENV_PATH='/env/.env_local' node src/index.js",
+    "dev": "cross-env ENV_PATH='/env/.env_dev' node src/index.js"
   },
   "author": "",
   "license": "ISC",
