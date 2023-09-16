@@ -23,6 +23,7 @@ module.exports=({app,express,cors,logger,constant})=>{
         },
         pathDefination:(container)=>{
              /* Step into the Controller */
+             app.get('/', (req, res) => res.send('Welcome to Make REST API Calls In Express!'));
             app.get(constant.GET_ALL_PRODUCTS,container.resolve("productController").getAllProducts);
             app.get(constant.GET_PRODUCT_BY_ID,container.resolve("productController").getProductById);
             app.get(constant.GET_PRODUCT_BY_CATEGORY_ID,container.resolve("productController").getProductByCategory);
