@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "e23f903b-1772-4c6a-a42e-06eacb4a67be",
+		"name": "Just-Buy-APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29775626"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/getAllProducts",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"getAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/getProductById/2",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"getProductById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products By Category Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/getProductByCategoryId/1",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"getProductByCategoryId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Product Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/getAllProductCategory",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"getAllProductCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"Rahul\",\r\n    \"lastname\":\"A\",\r\n    \"address\":\"Thoraipakkam\",\r\n    \"city\":\"chennai\",\r\n    \"email\":\"test@yopmai.com\",\r\n    \"mobile\":\"9874563210\",\r\n    \"state\":\"TN\",\r\n    \"zipcode\":\"639002\",\r\n    \"country\":\"IND\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/user/create",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"firstname\":\"Vijay\",\r\n    \"lastname\":\"Ajith\",\r\n    \"address\":\"OMR\",\r\n    \"city\":\"chennai\",\r\n    \"email\":\"test12@yopmai.com\",\r\n    \"mobile\":\"9874563210\",\r\n    \"state\":\"TN\",\r\n    \"zipcode\":\"639002\",\r\n    \"country\":\"IND\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/user/update",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/user/getUserById/1",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"getUserById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order By UserId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-15-207-111-62.ap-south-1.compute.amazonaws.com:8000/order/getByUserId/1",
+					"protocol": "http",
+					"host": [
+						"ec2-15-207-111-62",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8000",
+					"path": [
+						"order",
+						"getByUserId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
